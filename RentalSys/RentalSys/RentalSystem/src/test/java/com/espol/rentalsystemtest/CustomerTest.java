@@ -30,7 +30,7 @@ public class CustomerTest {
     @Test
     public void testStatement() {
         Customer instance = new Customer("Luis");
-        String expResult = "Rental Record for Luis\n";
+        String expResult = "Rental Record for Luis\nAmount owed is 0.0\nYou earned 0 frequent renter points";
         String result = instance.statement();
         assertEquals(expResult, result);
     }
